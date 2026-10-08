@@ -1,0 +1,30 @@
+{
+  "name": "prova-escola-ti",
+  "version": "1.0.0",
+  "description": "> No momento da aplicação, esta pasta virou o **seu repositório** (contrato,\r > rubrica e testes públicos estão na raiz). O esqueleto com os workflows de\r > correção continua aqui, por trás.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arduinjulia/prova-escola-ti.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/arduinjulia/prova-escola-ti/issues"
+  },
+  "homepage": "https://github.com/arduinjulia/prova-escola-ti#readme",
+  "dependencies": {
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "mongoose": "^9.11.1"
+  }
+}
