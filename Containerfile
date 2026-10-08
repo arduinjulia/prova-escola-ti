@@ -28,7 +28,7 @@
 # ---- Java/Spring ----
 # (multi-stage: maven build + jre run — veja o track 02 para inspiracao)
 
-FROM node:24
+FROM node:22
 
 WORKDIR /app
 
@@ -40,4 +40,4 @@ COPY . .
 
 EXPOSE 8080
 
-CMD ["npm", "start"]
+CMD ["npm", "src/server.js"]
