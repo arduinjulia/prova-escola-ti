@@ -28,4 +28,16 @@
 # ---- Java/Spring ----
 # (multi-stage: maven build + jre run — veja o track 02 para inspiracao)
 
-FROM scratch
+FROM node:24
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 8080
+
+CMD ["npm", "start"]
