@@ -4,11 +4,9 @@ const mongoose = require('mongoose')
 
 const URI = 'mongodb+srv://juliaarduin1502_db_user:xZEq3wMYgKRzmecm@cluster0.jrntp6o.mongodb.net/?appName=Cluster0'
 
-// const databaseConnection = () => {
-//     global.mongoose = mongoose.connect(URI)
-// }
-
-// export default databaseConnection
+const databaseConnection = () => {
+    global.mongoose = mongoose.connect(URI)
+}
 
 app.get('/healthz', (req, res) => {
     res.status(200).json({
@@ -17,7 +15,7 @@ app.get('/healthz', (req, res) => {
 })
 
 app.post('/senhas', (req, res) => {
-
+    
 })
 
 
